@@ -1418,8 +1418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
-  movers:
-  - {fileID: 2063048110}
+  mover: {fileID: 2063048110}
 --- !u!114 &2063048110
 MonoBehaviour:
   m_ObjectHideFlags: 0
