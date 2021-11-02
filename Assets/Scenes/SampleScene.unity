@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 19398856}
   - component: {fileID: 19398855}
   - component: {fileID: 19398854}
-  - component: {fileID: 19398858}
   m_Layer: 2
   m_Name: SnakeTailPart (5)
   m_TagString: Untagged
@@ -219,19 +218,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &19398858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19398853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 2
 --- !u!1 &39325649
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +263,6 @@ GameObject:
   - component: {fileID: 311022590}
   - component: {fileID: 311022589}
   - component: {fileID: 311022588}
-  - component: {fileID: 311022592}
   m_Layer: 2
   m_Name: SnakeTailPart (4)
   m_TagString: Untagged
@@ -361,19 +346,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &311022592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311022587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 2.5
 --- !u!1 &354603166
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +394,6 @@ GameObject:
   - component: {fileID: 431013573}
   - component: {fileID: 431013572}
   - component: {fileID: 431013571}
-  - component: {fileID: 431013575}
   m_Layer: 2
   m_Name: SnakeTailPart (2)
   m_TagString: Untagged
@@ -506,19 +477,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &431013575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 431013570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 3.5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +572,6 @@ GameObject:
   - component: {fileID: 544271075}
   - component: {fileID: 544271074}
   - component: {fileID: 544271073}
-  - component: {fileID: 544271077}
   m_Layer: 2
   m_Name: SnakeTailPart (1)
   m_TagString: Untagged
@@ -698,19 +655,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &544271077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544271072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 4
 --- !u!1 &556582353
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +858,6 @@ GameObject:
   - component: {fileID: 1303521306}
   - component: {fileID: 1303521305}
   - component: {fileID: 1303521304}
-  - component: {fileID: 1303521308}
   m_Layer: 2
   m_Name: SnakeTailPart
   m_TagString: Untagged
@@ -998,19 +941,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1303521308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303521303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 4.5
 --- !u!1 &1621946619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +953,6 @@ GameObject:
   - component: {fileID: 1621946622}
   - component: {fileID: 1621946621}
   - component: {fileID: 1621946620}
-  - component: {fileID: 1621946624}
   m_Layer: 2
   m_Name: SnakeTailPart (3)
   m_TagString: Untagged
@@ -1107,19 +1036,6 @@ Transform:
   m_Father: {fileID: 354603167}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1621946624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621946619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 3
 --- !u!1 &1720387648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,4 +1347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpTime: 5
+  maxSpeed: 6
+  minSpeed: 1
+  tail:
+  - {fileID: 1303521307}
+  - {fileID: 544271076}
+  - {fileID: 431013574}
+  - {fileID: 1621946623}
+  - {fileID: 311022591}
+  - {fileID: 19398857}
