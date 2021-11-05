@@ -9,8 +9,8 @@ public class LevelMover : MonoBehaviour
     private Transform _transform;
     private bool _move;
 
-    private void OnEnable() => SnakeCollisions.onObstacleCollide += LevelStop;
-    private void OnDisable() => SnakeCollisions.onObstacleCollide -= LevelStop;
+    private void OnEnable() => SnakeCollisions.OnObstacleCollide += LevelStop;
+    private void OnDisable() => SnakeCollisions.OnObstacleCollide -= LevelStop;
     
     private void Start()
     {

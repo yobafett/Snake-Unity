@@ -2959,9 +2959,10 @@ GameObject:
   - component: {fileID: 1691734509}
   - component: {fileID: 1691734511}
   - component: {fileID: 1691734510}
+  - component: {fileID: 1691734512}
   m_Layer: 0
   m_Name: FoodGroup (3)
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3012,6 +3013,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.50736934, z: 1.1}
   m_Center: {x: 0.25, y: -0.003684789, z: 0.17500001}
+--- !u!114 &1691734512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691734508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c7bdf533bdf304b9be800f4d9d46d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 1175629188}
+  - {fileID: 641329197}
+  - {fileID: 1823971037}
+  - {fileID: 682684370}
+  - {fileID: 1496138373}
+  - {fileID: 469616638}
+  - {fileID: 1784684012}
+  boxCollider: {fileID: 1691734511}
 --- !u!1 &1715234038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,9 +3045,10 @@ GameObject:
   - component: {fileID: 1715234039}
   - component: {fileID: 1715234040}
   - component: {fileID: 1715234041}
+  - component: {fileID: 1715234042}
   m_Layer: 0
   m_Name: FoodGroup (1)
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3076,6 +3099,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea90e7e21de79a549b9c6e4bfc2ff3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1715234042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715234038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c7bdf533bdf304b9be800f4d9d46d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 173458901}
+  - {fileID: 354495036}
+  - {fileID: 123702524}
+  - {fileID: 321991855}
+  - {fileID: 327557732}
+  - {fileID: 60185202}
+  - {fileID: 501853240}
+  boxCollider: {fileID: 1715234040}
 --- !u!1 &1720387648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3344,9 +3388,10 @@ GameObject:
   - component: {fileID: 1878182908}
   - component: {fileID: 1878182910}
   - component: {fileID: 1878182909}
+  - component: {fileID: 1878182911}
   m_Layer: 0
   m_Name: FoodGroup (2)
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3397,6 +3442,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.50736934, z: 1.1}
   m_Center: {x: 0.25, y: -0.003684789, z: 0.17500001}
+--- !u!114 &1878182911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878182907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c7bdf533bdf304b9be800f4d9d46d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 1437313783}
+  - {fileID: 621588713}
+  - {fileID: 1513446600}
+  - {fileID: 704379019}
+  - {fileID: 1685037441}
+  - {fileID: 1493910268}
+  - {fileID: 1052036655}
+  boxCollider: {fileID: 1878182910}
 --- !u!1 &1995045236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,7 +3682,7 @@ GameObject:
   - component: {fileID: 2063048112}
   m_Layer: 2
   m_Name: SnakeHead
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,8 +8,8 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private SnakeMover mover;
     [SerializeField] private GameObject rayCatcher;
     
-    private void OnEnable() => SnakeCollisions.onObstacleCollide += DisableInput;
-    private void OnDisable() => SnakeCollisions.onObstacleCollide -= DisableInput;
+    private void OnEnable() => SnakeCollisions.OnObstacleCollide += DisableInput;
+    private void OnDisable() => SnakeCollisions.OnObstacleCollide -= DisableInput;
     
     private void Update()
     {
