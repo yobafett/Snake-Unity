@@ -8,6 +8,9 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private SnakeMover mover;
     [SerializeField] private GameObject rayCatcher;
     
+    private void OnEnable() => SnakeCollisions.onObstacleCollide += DisableInput;
+    private void OnDisable() => SnakeCollisions.onObstacleCollide -= DisableInput;
+    
     private void Update()
     {
         if (Input.GetMouseButton(0)) Move();
@@ -29,5 +32,10 @@ public class PlayerInput : MonoBehaviour
             }
             mover.SetMoveTarget(targetX);
         }
+    }
+
+    private void DisableInput()
+    {
+        this.enabled = false;
     }
 }
