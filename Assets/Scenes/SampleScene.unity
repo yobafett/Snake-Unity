@@ -3609,6 +3609,7 @@ GameObject:
   - component: {fileID: 1691541899}
   - component: {fileID: 1691541901}
   - component: {fileID: 1691541900}
+  - component: {fileID: 1691541902}
   m_Layer: 5
   m_Name: GemCount
   m_TagString: Untagged
@@ -3655,7 +3656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3732,6 +3733,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691541898}
   m_CullTransparentMesh: 1
+--- !u!114 &1691541902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691541898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18db20c4a438f6c409c63fa05c9c11e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1691734508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,6 +4598,7 @@ GameObject:
   - component: {fileID: 2063048110}
   - component: {fileID: 2063048112}
   - component: {fileID: 2063048113}
+  - component: {fileID: 2063048114}
   m_Layer: 2
   m_Name: SnakeHead
   m_TagString: Player
@@ -4752,3 +4766,15 @@ MonoBehaviour:
   - {fileID: 1621946621}
   - {fileID: 311022589}
   - {fileID: 19398855}
+--- !u!114 &2063048114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063048104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5675ec919086a514880b333741eae79d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

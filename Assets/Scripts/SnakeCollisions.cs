@@ -13,6 +13,7 @@ public class SnakeCollisions : MonoBehaviour
     private string _gemTag;
     private string _checkPointTag;
     private SnakeColor _snakeColor;
+    private SnakeFever _snakeFever;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class SnakeCollisions : MonoBehaviour
         _gemTag = UnityEditorInternal.InternalEditorUtility.tags[9];
         _checkPointTag = UnityEditorInternal.InternalEditorUtility.tags[10];
         _snakeColor = GetComponent<SnakeColor>();
+        _snakeFever = GetComponent<SnakeFever>();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -43,6 +45,7 @@ public class SnakeCollisions : MonoBehaviour
         else if (other.gameObject.CompareTag(_gemTag))
         {
             other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+            _snakeFever.AddGem();
         }
         else if (other.gameObject.CompareTag(_checkPointTag))
         {
