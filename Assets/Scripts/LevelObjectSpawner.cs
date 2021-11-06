@@ -6,25 +6,31 @@ using Random = UnityEngine.Random;
 
 public class LevelObjectSpawner : MonoBehaviour
 {
+    [SerializeField] private bool randomiseX;
+    
     private Transform _transform;
+    private float _defaultX;
     private float _defaultY;
-    private LevelObjectVisible _food;
+    private LevelObjectVisible _visible;
 
     private void Start()
     {
         _transform = transform;
-        _defaultY = _transform.position.y;
-        _food = GetComponent<LevelObjectVisible>();
+        var pos = _transform.position;
+        _defaultX = pos.x;
+        _defaultY = pos.y;
+        _visible = GetComponent<LevelObjectVisible>();
     }
 
     void FixedUpdate()
     {
         if (transform.position.z < -10f)
         {
-            _transform.position = new Vector3(Random.Range(-0.8f, 0.8f), _defaultY, 10f);
-            if (_food)
+            var xPos = randomiseX ? Random.Range(-0.8f, 0.8f) : _defaultX;
+            _transform.position = new Vector3(xPos, _defaultY, 10f);
+            if (_visible)
             {
-                _food.SetVisible(true);
+                _visible.SetVisible(true);
             }
         }
     }
