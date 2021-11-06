@@ -3368,6 +3368,7 @@ GameObject:
   - component: {fileID: 1691734511}
   - component: {fileID: 1691734510}
   - component: {fileID: 1691734512}
+  - component: {fileID: 1691734513}
   m_Layer: 0
   m_Name: FoodGroup (3)
   m_TagString: Food
@@ -3443,6 +3444,26 @@ MonoBehaviour:
   - {fileID: 469616638}
   - {fileID: 1784684012}
   boxCollider: {fileID: 1691734511}
+--- !u!114 &1691734513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691734508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad11667f0efc2744a270ec2f28b0932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 1175629188}
+  - {fileID: 641329197}
+  - {fileID: 1823971037}
+  - {fileID: 682684370}
+  - {fileID: 1496138373}
+  - {fileID: 469616638}
+  - {fileID: 1784684012}
 --- !u!1 &1715234038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,6 +3476,7 @@ GameObject:
   - component: {fileID: 1715234040}
   - component: {fileID: 1715234041}
   - component: {fileID: 1715234042}
+  - component: {fileID: 1715234043}
   m_Layer: 0
   m_Name: FoodGroup (1)
   m_TagString: Food
@@ -3530,6 +3552,26 @@ MonoBehaviour:
   - {fileID: 60185202}
   - {fileID: 501853240}
   boxCollider: {fileID: 1715234040}
+--- !u!114 &1715234043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715234038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad11667f0efc2744a270ec2f28b0932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 173458901}
+  - {fileID: 354495036}
+  - {fileID: 123702524}
+  - {fileID: 321991855}
+  - {fileID: 327557732}
+  - {fileID: 60185202}
+  - {fileID: 501853240}
 --- !u!1 &1720387648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +3841,7 @@ GameObject:
   - component: {fileID: 1878182910}
   - component: {fileID: 1878182909}
   - component: {fileID: 1878182911}
+  - component: {fileID: 1878182912}
   m_Layer: 0
   m_Name: FoodGroup (2)
   m_TagString: Food
@@ -3874,6 +3917,26 @@ MonoBehaviour:
   - {fileID: 1493910268}
   - {fileID: 1052036655}
   boxCollider: {fileID: 1878182910}
+--- !u!114 &1878182912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878182907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad11667f0efc2744a270ec2f28b0932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 1437313783}
+  - {fileID: 621588713}
+  - {fileID: 1513446600}
+  - {fileID: 704379019}
+  - {fileID: 1685037441}
+  - {fileID: 1493910268}
+  - {fileID: 1052036655}
 --- !u!1 &1915061986
 GameObject:
   m_ObjectHideFlags: 0
