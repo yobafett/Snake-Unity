@@ -25,7 +25,7 @@ public class SnakeCollisions : MonoBehaviour
         }
         else if (other.gameObject.CompareTag(_foodTag))
         {
-            other.gameObject.GetComponent<LevelObjectVisible>().HideFood();
+            other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
         }
     }
 }

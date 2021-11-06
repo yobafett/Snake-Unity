@@ -7,11 +7,23 @@ using UnityEngine.Serialization;
 public class LevelObjectVisible : MonoBehaviour
 {
     [SerializeField] private MeshRenderer[] meshRenderers;
-    [SerializeField] private BoxCollider boxCollider;
-    
-    public void HideFood()
+    [FormerlySerializedAs("objCollider")] [SerializeField] private BoxCollider boxCollider;
+    private bool _isVisible = true;
+
+    public bool GetVisible() => _isVisible;
+
+    public void SetVisible(bool state)
+    {
+        if(state == _isVisible) return;
+        
+        if (state) ShowFood();
+        else HideFood();
+    }
+
+    private void HideFood()
     {
         boxCollider.enabled = false;
+        _isVisible = false;
         
         foreach (var meshRenderer in meshRenderers)
         {
@@ -19,9 +31,10 @@ public class LevelObjectVisible : MonoBehaviour
         }
     }
     
-    public void ShowFood()
+    private void ShowFood()
     {
         boxCollider.enabled = true;
+        _isVisible = true;
 
         foreach (var meshRenderer in meshRenderers)
         {

@@ -24,7 +24,7 @@ public class LevelObjectSpawner : MonoBehaviour
             _transform.position = new Vector3(Random.Range(-0.8f, 0.8f), _defaultY, 10f);
             if (_food)
             {
-                _food.ShowFood();
+                _food.SetVisible(true);
             }
         }
     }
