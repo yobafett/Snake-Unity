@@ -29,11 +29,19 @@ public class SnakeCollisions : MonoBehaviour
     {
         if (other.gameObject.CompareTag(_obstacleTag))
         {
-            OnObstacleCollide?.Invoke();
+            if (_snakeFever.IsFever())
+            {
+                other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+            }
+            else
+            {
+                OnObstacleCollide?.Invoke();
+            }
         }
         else if (other.gameObject.CompareTag(_foodTag))
         {
-            if (other.gameObject.GetComponent<FoodColor>().GetColorId() == _snakeColor.GetColorId())
+            var isSameColor = other.gameObject.GetComponent<FoodColor>().GetColorId() == _snakeColor.GetColorId();
+            if (_snakeFever.IsFever() || isSameColor)
             {
                 other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
             }
