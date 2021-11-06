@@ -10,11 +10,13 @@ public class SnakeCollisions : MonoBehaviour
     
     private string _obstacleTag;
     private string _foodTag;
+    private string _gemTag;
 
     private void Start()
     {
         _obstacleTag = UnityEditorInternal.InternalEditorUtility.tags[7];
         _foodTag = UnityEditorInternal.InternalEditorUtility.tags[8];
+        _gemTag = UnityEditorInternal.InternalEditorUtility.tags[9];
     }
 
     private void OnCollisionEnter(Collision other)
@@ -24,6 +26,10 @@ public class SnakeCollisions : MonoBehaviour
             OnObstacleCollide?.Invoke();
         }
         else if (other.gameObject.CompareTag(_foodTag))
+        {
+            other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+        }
+        else if (other.gameObject.CompareTag(_gemTag))
         {
             other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
         }

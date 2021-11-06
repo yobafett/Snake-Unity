@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Food
+  - Gem
   layers:
   - Default
   - TransparentFX
