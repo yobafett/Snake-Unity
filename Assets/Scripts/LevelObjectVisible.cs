@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class FoodController : MonoBehaviour
+public class LevelObjectVisible : MonoBehaviour
 {
     [SerializeField] private MeshRenderer[] meshRenderers;
     [SerializeField] private BoxCollider boxCollider;

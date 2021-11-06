@@ -8,13 +8,13 @@ public class LevelObjectSpawner : MonoBehaviour
 {
     private Transform _transform;
     private float _defaultY;
-    private FoodController _food;
+    private LevelObjectVisible _food;
 
     private void Start()
     {
         _transform = transform;
         _defaultY = _transform.position.y;
-        _food = GetComponent<FoodController>();
+        _food = GetComponent<LevelObjectVisible>();
     }
 
     void FixedUpdate()
