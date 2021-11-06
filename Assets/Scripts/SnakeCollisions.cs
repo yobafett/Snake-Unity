@@ -31,7 +31,14 @@ public class SnakeCollisions : MonoBehaviour
         }
         else if (other.gameObject.CompareTag(_foodTag))
         {
-            other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+            if (other.gameObject.GetComponent<FoodColor>().GetColorId() == _snakeColor.GetColorId())
+            {
+                other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+            }
+            else
+            {
+                OnObstacleCollide?.Invoke();
+            }
         }
         else if (other.gameObject.CompareTag(_gemTag))
         {
