@@ -28,6 +28,8 @@ public class CheckPointColor : MonoBehaviour
         
         SetColor(newIndex);
     }
+
+    public int GetColorId() => _colorIndex;
     
     private void SetColor(int colorIndex)
     {

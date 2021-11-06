@@ -11,12 +11,16 @@ public class SnakeCollisions : MonoBehaviour
     private string _obstacleTag;
     private string _foodTag;
     private string _gemTag;
+    private string _checkPointTag;
+    private SnakeColor _snakeColor;
 
     private void Start()
     {
         _obstacleTag = UnityEditorInternal.InternalEditorUtility.tags[7];
         _foodTag = UnityEditorInternal.InternalEditorUtility.tags[8];
         _gemTag = UnityEditorInternal.InternalEditorUtility.tags[9];
+        _checkPointTag = UnityEditorInternal.InternalEditorUtility.tags[10];
+        _snakeColor = GetComponent<SnakeColor>();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -32,6 +36,11 @@ public class SnakeCollisions : MonoBehaviour
         else if (other.gameObject.CompareTag(_gemTag))
         {
             other.gameObject.GetComponent<LevelObjectVisible>().SetVisible(false);
+        }
+        else if (other.gameObject.CompareTag(_checkPointTag))
+        {
+            var checkPointColor = other.gameObject.GetComponent<CheckPointColor>().GetColorId();
+            _snakeColor.SetColor(checkPointColor);
         }
     }
 }

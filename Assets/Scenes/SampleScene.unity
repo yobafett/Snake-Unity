@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 344614461}
   m_Layer: 0
   m_Name: CheckPoint
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4145,6 +4145,7 @@ GameObject:
   - component: {fileID: 2063048109}
   - component: {fileID: 2063048110}
   - component: {fileID: 2063048112}
+  - component: {fileID: 2063048113}
   m_Layer: 2
   m_Name: SnakeHead
   m_TagString: Player
@@ -4292,3 +4293,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d2793cd61e923409082cb45db34dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2063048113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063048104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf5518c839224c47a02591f0f663fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 2063048106}
+  - {fileID: 1303521305}
+  - {fileID: 544271074}
+  - {fileID: 431013572}
+  - {fileID: 1621946621}
+  - {fileID: 311022589}
+  - {fileID: 19398855}
