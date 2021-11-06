@@ -12,6 +12,7 @@ public class LevelObjectSpawner : MonoBehaviour
     private float _defaultX;
     private float _defaultY;
     private LevelObjectVisible _visible;
+    private CheckPointColor _checkPoint;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class LevelObjectSpawner : MonoBehaviour
         _defaultX = pos.x;
         _defaultY = pos.y;
         _visible = GetComponent<LevelObjectVisible>();
+        _checkPoint = GetComponent<CheckPointColor>();
     }
 
     void FixedUpdate()
@@ -31,6 +33,11 @@ public class LevelObjectSpawner : MonoBehaviour
             if (_visible)
             {
                 _visible.SetVisible(true);
+            }
+
+            if (_checkPoint)
+            {
+                _checkPoint.SetNewColor();
             }
         }
     }
