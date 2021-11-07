@@ -12,6 +12,7 @@ public class SnakeColor : MonoBehaviour
     private void Start()
     {
         _colorController = FindObjectOfType<ColorController>();
+        SetColor(0);
     }
 
     public int GetColorId() => _colorIndex;

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelMover : MonoBehaviour
 {
-    [SerializeField][Range(0.1f, 1f)] private float speed;
+    [SerializeField] private float speed;
     private Transform _transform;
     private bool _move;
 

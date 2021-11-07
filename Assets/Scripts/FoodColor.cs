@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,16 +23,16 @@ public class FoodColor : MonoBehaviour
         {
             newIndex = _colorController.GetRandomIndex();
         }
-        
-        SetColor(newIndex);
+
+        _colorIndex = newIndex;
+        SetColor(_colorController.GetColor(_colorIndex));
     }
     
-    private void SetColor(int colorIndex)
+    private void SetColor(Color color)
     {
-        _colorIndex = colorIndex;
         foreach (var meshRenderer in meshRenderers)
         {
-            meshRenderer.material.color = _colorController.GetColor(_colorIndex);
+            meshRenderer.material.color = color;
         }
     }
 }
