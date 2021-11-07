@@ -508,6 +508,7 @@ GameObject:
   - component: {fileID: 200828031}
   - component: {fileID: 200828034}
   - component: {fileID: 200828035}
+  - component: {fileID: 200828036}
   m_Layer: 0
   m_Name: Obstacle(3)
   m_TagString: Obstacle
@@ -619,6 +620,18 @@ MonoBehaviour:
   meshRenderers:
   - {fileID: 200828032}
   boxCollider: {fileID: 200828031}
+--- !u!114 &200828036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200828029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bd6ec5b3c27704194c7bde5cf82ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300089588
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +978,7 @@ GameObject:
   - component: {fileID: 344614458}
   - component: {fileID: 344614457}
   - component: {fileID: 344614461}
+  - component: {fileID: 344614462}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Checkpoint
@@ -1071,6 +1085,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e2dd0b2964a20940a92cf12df736e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &344614462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344614455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30fea6840004c6eb73588fbb5e6182c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &354495033
@@ -1204,6 +1230,7 @@ GameObject:
   - component: {fileID: 413314036}
   - component: {fileID: 413314039}
   - component: {fileID: 413314040}
+  - component: {fileID: 413314041}
   m_Layer: 0
   m_Name: Obstacle(2)
   m_TagString: Obstacle
@@ -1315,6 +1342,18 @@ MonoBehaviour:
   meshRenderers:
   - {fileID: 413314037}
   boxCollider: {fileID: 413314036}
+--- !u!114 &413314041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413314034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bd6ec5b3c27704194c7bde5cf82ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431013570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2108,7 @@ GameObject:
   - component: {fileID: 669027079}
   - component: {fileID: 669027078}
   - component: {fileID: 669027075}
+  - component: {fileID: 669027080}
   m_Layer: 0
   m_Name: Gem (1)
   m_TagString: Gem
@@ -2180,6 +2220,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &669027080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669027073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caea29221c2440389cf299cb8a1569eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674869153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2453,7 @@ GameObject:
   - component: {fileID: 736015107}
   - component: {fileID: 736015106}
   - component: {fileID: 736015105}
+  - component: {fileID: 736015110}
   m_Layer: 0
   m_Name: Gem (2)
   m_TagString: Gem
@@ -2512,6 +2565,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736015103}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &736015110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736015103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caea29221c2440389cf299cb8a1569eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &916971725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,6 +3855,7 @@ GameObject:
   - component: {fileID: 1691734510}
   - component: {fileID: 1691734512}
   - component: {fileID: 1691734513}
+  - component: {fileID: 1691734514}
   m_Layer: 0
   m_Name: FoodGroup (3)
   m_TagString: Food
@@ -3885,6 +3951,18 @@ MonoBehaviour:
   - {fileID: 1496138373}
   - {fileID: 469616638}
   - {fileID: 1784684012}
+--- !u!114 &1691734514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691734508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b14fa911aa0dd4409c750151fb7a4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715234038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +3976,7 @@ GameObject:
   - component: {fileID: 1715234041}
   - component: {fileID: 1715234042}
   - component: {fileID: 1715234043}
+  - component: {fileID: 1715234044}
   m_Layer: 0
   m_Name: FoodGroup (1)
   m_TagString: Food
@@ -3993,6 +4072,18 @@ MonoBehaviour:
   - {fileID: 327557732}
   - {fileID: 60185202}
   - {fileID: 501853240}
+--- !u!114 &1715234044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715234038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b14fa911aa0dd4409c750151fb7a4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1720387648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,6 +4354,7 @@ GameObject:
   - component: {fileID: 1878182909}
   - component: {fileID: 1878182911}
   - component: {fileID: 1878182912}
+  - component: {fileID: 1878182913}
   m_Layer: 0
   m_Name: FoodGroup (2)
   m_TagString: Food
@@ -4358,6 +4450,18 @@ MonoBehaviour:
   - {fileID: 1685037441}
   - {fileID: 1493910268}
   - {fileID: 1052036655}
+--- !u!114 &1878182913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878182907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b14fa911aa0dd4409c750151fb7a4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1915061986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,6 +4622,7 @@ GameObject:
   - component: {fileID: 2015728650}
   - component: {fileID: 2015728653}
   - component: {fileID: 2015728654}
+  - component: {fileID: 2015728655}
   m_Layer: 0
   m_Name: Obstacle(1)
   m_TagString: Obstacle
@@ -4629,6 +4734,18 @@ MonoBehaviour:
   meshRenderers:
   - {fileID: 2015728651}
   boxCollider: {fileID: 2015728650}
+--- !u!114 &2015728655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015728648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bd6ec5b3c27704194c7bde5cf82ffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2063048104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,9 +4761,9 @@ GameObject:
   - component: {fileID: 2063048111}
   - component: {fileID: 2063048109}
   - component: {fileID: 2063048110}
-  - component: {fileID: 2063048112}
   - component: {fileID: 2063048113}
   - component: {fileID: 2063048114}
+  - component: {fileID: 2063048112}
   m_Layer: 2
   m_Name: SnakeHead
   m_TagString: Player
@@ -4791,7 +4908,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063048104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86d2793cd61e923409082cb45db34dba, type: 3}
+  m_Script: {fileID: 11500000, guid: f1577ce7c9d841959f8d06688ad9a8cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2063048113

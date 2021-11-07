@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ColorController : MonoBehaviour
 {
-    [SerializeField] private Color[] _colors;
+    [SerializeField] private Color[] colors;
     private int _colorsLength;
     
-    private void Start()
+    private void Awake()
     {
-        _colorsLength = _colors.Length;
+        _colorsLength = colors.Length;
     }
 
     public Color GetColor(int index)
     {
         if (index < 0 || index >= _colorsLength)
         {
-            return _colors[_colorsLength - 1];
+            return colors[_colorsLength - 1];
         }
-        return _colors[index];
+        return colors[index];
     }
 
     public int GetRandomIndex()
