@@ -8,14 +8,18 @@ public class LevelMover : MonoBehaviour
     [SerializeField] private float speed;
     private Transform _transform;
     private bool _move;
+    private float _currentSpeed;
 
     private void OnEnable() => SnakeCollisions.OnObstacleCollide += LevelStop;
     private void OnDisable() => SnakeCollisions.OnObstacleCollide -= LevelStop;
+
+    public void SetSpeedModif(int speedMod) => _currentSpeed = speed * speedMod;
     
     private void Start()
     {
         _transform = transform;
         _move = true;
+        _currentSpeed = speed;
     }
 
     void FixedUpdate()
@@ -23,7 +27,7 @@ public class LevelMover : MonoBehaviour
         if (_move)
         {
             var currentPosition = _transform.position;
-            var newPosition = new Vector3(currentPosition.x, currentPosition.y, (currentPosition.z - speed));
+            var newPosition = new Vector3(currentPosition.x, currentPosition.y, (currentPosition.z - _currentSpeed));
             _transform.position = newPosition;
         }
     }
