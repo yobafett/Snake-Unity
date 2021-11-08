@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnakeColor : MonoBehaviour
+public class ColoredObject : MonoBehaviour
 {
     [SerializeField] private MeshRenderer[] meshRenderers;
     private ColorController _colorController;
-    private int _colorIndex;
+    private int _colorIndex = 0;
 
     private void Start()
     {
@@ -16,13 +16,16 @@ public class SnakeColor : MonoBehaviour
     }
 
     public int GetColorId() => _colorIndex;
-    
-    public void SetColor(int colorIndex)
+
+    public void SetColor(int colorIndex = -1)
     {
-        _colorIndex = colorIndex;
+        _colorIndex = colorIndex < 0 
+            ? _colorController.GetRandomIndex() : colorIndex;
+        var color = _colorController.GetColor(_colorIndex);
+
         foreach (var meshRenderer in meshRenderers)
         {
-            meshRenderer.material.color = _colorController.GetColor(_colorIndex);
+            meshRenderer.material.color = color;
         }
     }
 }

@@ -347,7 +347,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6606339342809496787, guid: efa595026f1016c45bd5e6112b2c26d8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: efa595026f1016c45bd5e6112b2c26d8, type: 3}
 --- !u!4 &230244664 stripped
 Transform:
@@ -1164,7 +1165,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2637935548681095056, guid: ac9475e5e4dea0b4caa06b894248e74a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ac9475e5e4dea0b4caa06b894248e74a, type: 3}
 --- !u!4 &943424261 stripped
 Transform:

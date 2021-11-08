@@ -9,8 +9,7 @@ public class LevelObjectRespawner : MonoBehaviour
     [SerializeField] private bool disableXRand;
     private Transform _transform;
     private LevelObjectVisible _visible;
-    private FoodColor _foodColor;
-    private CheckPointColor _checkPointColor;
+    private ColoredObject _color;
     private float _defaultX;
     private float _defaultY;
     private const float StartVisibleZ = 10f;
@@ -20,8 +19,7 @@ public class LevelObjectRespawner : MonoBehaviour
     {
         _transform = transform;
         _visible = GetComponent<LevelObjectVisible>();
-        _foodColor = GetComponent<FoodColor>();
-        _checkPointColor = GetComponent<CheckPointColor>();
+        _color = GetComponent<ColoredObject>();
         _defaultX = _transform.position.x;
         _defaultY = _transform.position.y;
     }
@@ -34,9 +32,7 @@ public class LevelObjectRespawner : MonoBehaviour
             _transform.position = new Vector3(newX, _defaultY, StartVisibleZ);
             
             if(_visible) _visible.SetVisible(true);
-            
-            if(_foodColor) _foodColor.SetNewColor();
-            else if(_checkPointColor) _checkPointColor.SetNewColor();
+            if(_color) _color.SetColor();
         }
     }
 }

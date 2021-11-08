@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class CheckPointCollisions : MonoBehaviour, ILevelObjectCollisions
 {
-    private CheckPointColor _checkPointColor;
+    private ColoredObject _checkPointColor;
     
     private void Start()
     {
-        _checkPointColor = GetComponent<CheckPointColor>();
+        _checkPointColor = GetComponent<ColoredObject>();
     }
 
     public void MakeCollision(GameObject player)
     {
         var checkPointColor = _checkPointColor.GetColorId();
-        player.GetComponent<SnakeColor>().SetColor(checkPointColor);
+        player.GetComponent<ColoredObject>().SetColor(checkPointColor);
     }
 }

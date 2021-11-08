@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2637935548681095059}
   - component: {fileID: 2637935548681095058}
   - component: {fileID: 2637935548681095057}
-  - component: {fileID: 2637935548681095056}
   - component: {fileID: 2637935548681095063}
+  - component: {fileID: 5625845525844279042}
   m_Layer: 0
   m_Name: Food
   m_TagString: Food
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea90e7e21de79a549b9c6e4bfc2ff3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomiseX: 1
+  disableXRand: 0
 --- !u!114 &2637935548681095057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,26 +89,6 @@ MonoBehaviour:
   - {fileID: 2637935549128194329}
   - {fileID: 2637935549030518611}
   boxCollider: {fileID: 2637935548681095059}
---- !u!114 &2637935548681095056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2637935548681095069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad11667f0efc2744a270ec2f28b0932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meshRenderers:
-  - {fileID: 2637935549291800254}
-  - {fileID: 2637935548900985175}
-  - {fileID: 2637935549207342999}
-  - {fileID: 2637935548866385860}
-  - {fileID: 2637935548860809487}
-  - {fileID: 2637935549128194329}
-  - {fileID: 2637935549030518611}
 --- !u!114 &2637935548681095063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +101,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b14fa911aa0dd4409c750151fb7a4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5625845525844279042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637935548681095069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf5518c839224c47a02591f0f663fb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 2637935549291800254}
+  - {fileID: 2637935548900985175}
+  - {fileID: 2637935549207342999}
+  - {fileID: 2637935548866385860}
+  - {fileID: 2637935548860809487}
+  - {fileID: 2637935549128194329}
+  - {fileID: 2637935549030518611}
 --- !u!1 &2637935548860809482
 GameObject:
   m_ObjectHideFlags: 0
