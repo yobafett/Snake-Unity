@@ -8,17 +8,16 @@ public class SnakeFever : MonoBehaviour
     public delegate void SnakeFeverEventHandler(int count);
     public static event SnakeFeverEventHandler OnGemsCountChange;
 
+    [SerializeField] private PlayerInput playerInput;
     private const float FeverTime = 5f;
     private int _gemsCount;
     private bool _isFever;
-    private PlayerInput _playerInput;
     private SnakeMover _mover;
     private LevelMover _levelMover;
 
     private void Start()
     {
         _levelMover = FindObjectOfType<LevelMover>();
-        _playerInput = GetComponent<PlayerInput>();
         _mover = GetComponent<SnakeMover>();
     }
 
@@ -32,7 +31,7 @@ public class SnakeFever : MonoBehaviour
         if (_gemsCount < 3) return;
 
         _isFever = true;
-        _playerInput.enabled = false;
+        playerInput.enabled = false;
         _mover.SetMoveTarget(0f);
         _levelMover.SetSpeedModif(3);
         Invoke(nameof(DisableFever), FeverTime);
@@ -49,7 +48,7 @@ public class SnakeFever : MonoBehaviour
     private void DisableFever()
     {
         _isFever = false;
-        _playerInput.enabled = true;
+        playerInput.enabled = true;
         _levelMover.SetSpeedModif(1);
         ClearGems();
     } 
