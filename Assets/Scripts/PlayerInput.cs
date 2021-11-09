@@ -4,13 +4,18 @@ using UnityEngine.Serialization;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private Camera mainCamera;
-    [SerializeField] private SnakeMover mover;
+    [SerializeField] private SnakeMover snakeMover;
     [SerializeField] private GameObject rayCatcher;
-    
+    private Camera _mainCamera;
+
     private void OnEnable() => SnakeCollisions.OnObstacleCollide += DisableInput;
     private void OnDisable() => SnakeCollisions.OnObstacleCollide -= DisableInput;
-    
+
+    private void Start()
+    {
+        _mainCamera = gameObject.GetComponent<Camera>();
+    }
+
     private void Update()
     {
         if (Input.GetMouseButton(0)) Move();
@@ -18,7 +23,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Move()
     {
-        var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        var ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out var hit))
         {
             var targetX = 0f;
@@ -30,7 +35,7 @@ public class PlayerInput : MonoBehaviour
             {
                 targetX += Mathf.Clamp(hit.point.x, -3.5f, 3.5f);
             }
-            mover.SetMoveTarget(targetX);
+            snakeMover.SetMoveTarget(targetX);
         }
     }
 
