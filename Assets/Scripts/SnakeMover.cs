@@ -2,43 +2,50 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SnakeMover : MonoBehaviour
 {
-    [SerializeField][Range(2f, 10f)] private float maxSpeed;
-    [SerializeField][Range(0.1f, 2f)] private float minSpeed;
     [SerializeField] private Transform[] tail;
+    [SerializeField] private float bonesDistance;
+    [SerializeField] private float moveSpeed;
     private Transform _transform;
     private Vector3 _moveTarget;
-    private bool _isMoving;
     private float _progress;
     private float _defaultZ;
     private float _defaultY;
-    private float _decreaseModifier;
+    private float _sqrDistance;
+    private bool _isMoving;
 
     private void Start()
     {
+        _sqrDistance = Mathf.Sqrt(bonesDistance);
         _transform = transform;
         var lPos = _transform.localPosition;
         _defaultZ = lPos.z;
         _defaultY = lPos.y;
-        _decreaseModifier = (maxSpeed - minSpeed) / tail.Length;
     }
-    
+
     private void Update()
     {
         if (_isMoving)
         {
-            Moving(_transform, maxSpeed, _moveTarget);
-            for (var i = 0; i < tail.Length; i++)
+            Moving(_transform, _moveTarget);
+            var previousPosition = transform.position;
+            foreach (var bone in tail)
             {
-                Moving(tail[i], maxSpeed - (_decreaseModifier * (i + 1)),
-                    new Vector3(_moveTarget.x, _defaultY, tail[i].position.z));
+                if ((bone.position - previousPosition).sqrMagnitude > _sqrDistance)
+                {
+                    bone.gameObject.GetComponent<SnakeTailMover>().SetMoveTarget(previousPosition, moveSpeed);
+                    previousPosition = bone.position;
+                }
+                else
+                {
+                    break;
+                }
             }
         }
     }
-
+    
     public void SetMoveTarget(float targetX)
     {
         _moveTarget = new Vector3(targetX, _defaultY, _defaultZ);
@@ -46,11 +53,11 @@ public class SnakeMover : MonoBehaviour
         _isMoving = true;
     }
     
-    private void Moving(Transform objectTransform, float speed, Vector3 moveTarget)
+    private void Moving(Transform objectTransform, Vector3 moveTarget)
     {
-        objectTransform.position = Vector3.Lerp(objectTransform.position, moveTarget, speed * Time.deltaTime);
-        _progress = Mathf.Lerp(_progress, 1f, speed * Time.deltaTime);
-        if (_progress > 0.99f)
+        objectTransform.position = Vector3.Lerp(objectTransform.position, moveTarget, moveSpeed * Time.deltaTime);
+        _progress = Mathf.Lerp(_progress, 1f, moveSpeed * Time.deltaTime);
+        if (_progress > 0.9f)
         {
             _isMoving = false;
         }

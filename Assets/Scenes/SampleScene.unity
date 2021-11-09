@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 19398856}
   - component: {fileID: 19398855}
   - component: {fileID: 19398854}
+  - component: {fileID: 19398858}
   m_Layer: 2
   m_Name: SnakeTailPart (5)
   m_TagString: Untagged
@@ -212,12 +213,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19398853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: -1.5231724}
+  m_LocalPosition: {x: 0, y: 0.15, z: -6.8}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 5
+  m_Father: {fileID: 213837564}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &19398858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19398853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &39325649
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +293,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2063048108}
-  - {fileID: 354603167}
+  - {fileID: 1303521307}
+  - {fileID: 544271076}
+  - {fileID: 431013574}
+  - {fileID: 1621946623}
+  - {fileID: 311022591}
+  - {fileID: 19398857}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -442,6 +460,7 @@ GameObject:
   - component: {fileID: 311022590}
   - component: {fileID: 311022589}
   - component: {fileID: 311022588}
+  - component: {fileID: 311022592}
   m_Layer: 2
   m_Name: SnakeTailPart (4)
   m_TagString: Untagged
@@ -519,48 +538,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311022587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: -1.1731725}
+  m_LocalPosition: {x: 0, y: 0.15, z: -6.5}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &354603166
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 354603167}
-  m_Layer: 2
-  m_Name: SnakeTail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &354603167
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354603166}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10240311, y: 0.639702, z: -5.5768275}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1303521307}
-  - {fileID: 544271076}
-  - {fileID: 431013574}
-  - {fileID: 1621946623}
-  - {fileID: 311022591}
-  - {fileID: 19398857}
   m_Father: {fileID: 213837564}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &311022592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311022587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431013570
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +568,7 @@ GameObject:
   - component: {fileID: 431013573}
   - component: {fileID: 431013572}
   - component: {fileID: 431013571}
+  - component: {fileID: 431013575}
   m_Layer: 2
   m_Name: SnakeTailPart (2)
   m_TagString: Untagged
@@ -650,12 +646,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431013570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: -0.47317266}
+  m_LocalPosition: {x: 0, y: 0.15, z: -5.9}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 2
+  m_Father: {fileID: 213837564}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431013575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431013570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &433513174
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +810,7 @@ GameObject:
   - component: {fileID: 544271075}
   - component: {fileID: 544271074}
   - component: {fileID: 544271073}
+  - component: {fileID: 544271077}
   m_Layer: 2
   m_Name: SnakeTailPart (1)
   m_TagString: Untagged
@@ -879,12 +888,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544271072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: -0.12317228}
+  m_LocalPosition: {x: 0, y: 0.15, z: -5.6}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 1
+  m_Father: {fileID: 213837564}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &544271077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544271072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &556582353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1438,7 @@ GameObject:
   - component: {fileID: 1303521306}
   - component: {fileID: 1303521305}
   - component: {fileID: 1303521304}
+  - component: {fileID: 1303521308}
   m_Layer: 2
   m_Name: SnakeTailPart
   m_TagString: Untagged
@@ -1494,12 +1516,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303521303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: 0.22682762}
+  m_LocalPosition: {x: 0, y: 0.15, z: -5.3}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 0
+  m_Father: {fileID: 213837564}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1303521308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303521303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596835698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,6 +1612,7 @@ GameObject:
   - component: {fileID: 1621946622}
   - component: {fileID: 1621946621}
   - component: {fileID: 1621946620}
+  - component: {fileID: 1621946624}
   m_Layer: 2
   m_Name: SnakeTailPart (3)
   m_TagString: Untagged
@@ -1655,12 +1690,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621946619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10240311, y: -0.48970202, z: -0.82317257}
+  m_LocalPosition: {x: 0, y: 0.15, z: -6.2}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 354603167}
-  m_RootOrder: 3
+  m_Father: {fileID: 213837564}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621946624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621946619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f154e52ad9d023c4ba404527b257a466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1626564034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2297,10 +2344,10 @@ GameObject:
   - component: {fileID: 2063048105}
   - component: {fileID: 2063048111}
   - component: {fileID: 2063048109}
-  - component: {fileID: 2063048110}
   - component: {fileID: 2063048113}
   - component: {fileID: 2063048114}
   - component: {fileID: 2063048112}
+  - component: {fileID: 2063048110}
   m_Layer: 2
   m_Name: SnakeHead
   m_TagString: Player
@@ -2408,11 +2455,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063048104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa44d3b70d25284d8695d16c0c0cec8, type: 3}
+  m_Script: {fileID: 11500000, guid: b9f2b81c61bd4024fb76728b8922f605, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
-  minSpeed: 2
   tail:
   - {fileID: 1303521307}
   - {fileID: 544271076}
@@ -2420,6 +2465,8 @@ MonoBehaviour:
   - {fileID: 1621946623}
   - {fileID: 311022591}
   - {fileID: 19398857}
+  bonesDistance: 0.001
+  moveSpeed: 25
 --- !u!54 &2063048111
 Rigidbody:
   m_ObjectHideFlags: 0
