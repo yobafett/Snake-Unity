@@ -68,6 +68,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableXRand: 0
+  minX: -3
+  maxX: 3
 --- !u!114 &2637935548681095057
 MonoBehaviour:
   m_ObjectHideFlags: 0

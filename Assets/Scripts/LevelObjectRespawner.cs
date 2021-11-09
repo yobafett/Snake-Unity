@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 public class LevelObjectRespawner : MonoBehaviour
 {
     [SerializeField] private bool disableXRand;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
     private Transform _transform;
     private LevelObjectVisible _visible;
     private ColoredObject _color;
@@ -28,7 +30,7 @@ public class LevelObjectRespawner : MonoBehaviour
     {
         if (_transform.position.z < EndVisibleZ)
         {
-            var newX = disableXRand ? _defaultX : Random.Range(-3.5f, 3.5f);
+            var newX = disableXRand ? _defaultX : Random.Range(minX, maxX);
             _transform.position = new Vector3(newX, _defaultY, StartVisibleZ);
             
             if(_visible) _visible.SetVisible(true);
