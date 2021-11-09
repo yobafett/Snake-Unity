@@ -24,11 +24,11 @@ public class PlayerInput : MonoBehaviour
             var targetX = 0f;
             if (hit.collider.gameObject == rayCatcher)
             {
-                targetX += hit.point.x > 0 ? 1f : -1f;
+                targetX += hit.point.x > 0 ? 3.5f : -3.5f;
             }
             else
             {
-                targetX += Mathf.Clamp(hit.point.x, -1f, 1f);
+                targetX += Mathf.Clamp(hit.point.x, -3.5f, 3.5f);
             }
             mover.SetMoveTarget(targetX);
         }

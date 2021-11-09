@@ -12,8 +12,8 @@ public class LevelObjectRespawner : MonoBehaviour
     private ColoredObject _color;
     private float _defaultX;
     private float _defaultY;
-    private const float StartVisibleZ = 10f;
-    private const float EndVisibleZ = -10f;
+    private const float StartVisibleZ = 50f;
+    private const float EndVisibleZ = -25f;
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class LevelObjectRespawner : MonoBehaviour
     {
         if (_transform.position.z < EndVisibleZ)
         {
-            var newX = disableXRand ? _defaultX : Random.Range(-0.8f, 0.8f);
+            var newX = disableXRand ? _defaultX : Random.Range(-3.5f, 3.5f);
             _transform.position = new Vector3(newX, _defaultY, StartVisibleZ);
             
             if(_visible) _visible.SetVisible(true);
