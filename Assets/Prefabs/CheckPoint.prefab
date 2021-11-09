@@ -137,3 +137,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshRenderers:
   - {fileID: 6606339342809496789}
+  colors: {fileID: 11400000, guid: 023bd8dad498917409cbc046db7f5c74, type: 2}

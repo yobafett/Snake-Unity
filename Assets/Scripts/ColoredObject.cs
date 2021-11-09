@@ -6,22 +6,18 @@ using UnityEngine;
 public class ColoredObject : MonoBehaviour
 {
     [SerializeField] private MeshRenderer[] meshRenderers;
-    private ColorController _colorController;
-    private int _colorIndex = 0;
+    [SerializeField] private ColorsScriptableObject colors;
+    private int _colorId;
 
-    private void Start()
-    {
-        _colorController = FindObjectOfType<ColorController>();
-        SetColor(0);
-    }
-
-    public int GetColorId() => _colorIndex;
+    private void Start() => SetColor(0);
+    
+    public int GetColorId() => _colorId;
 
     public void SetColor(int colorIndex = -1)
     {
-        _colorIndex = colorIndex < 0 
-            ? _colorController.GetRandomIndex() : colorIndex;
-        var color = _colorController.GetColor(_colorIndex);
+        _colorId = colorIndex < 0 
+            ? colors.GetRandomColorId(_colorId) : colorIndex;
+        var color = colors.GetColorById(_colorId);
 
         foreach (var meshRenderer in meshRenderers)
         {

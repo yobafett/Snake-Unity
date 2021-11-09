@@ -665,7 +665,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433513175}
-  - component: {fileID: 433513181}
   - component: {fileID: 433513176}
   m_Layer: 0
   m_Name: LevelObjects
@@ -708,28 +707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
---- !u!114 &433513181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433513174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d779bbcc0e3de2e4088b978f82df22b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.071077585, a: 0}
-  - {r: 0, g: 0.08320022, b: 1, a: 0}
-  - {r: 0, g: 1, b: 0.96124196, a: 0}
-  - {r: 1, g: 0, b: 0.9118242, a: 0}
-  - {r: 1, g: 0.928037, b: 0, a: 0}
-  - {r: 1, g: 0.27581564, b: 0, a: 0}
-  - {r: 0.495409, g: 0, b: 1, a: 0}
-  - {r: 0.8057867, g: 1, b: 0, a: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,6 +2468,7 @@ MonoBehaviour:
   - {fileID: 1621946621}
   - {fileID: 311022589}
   - {fileID: 19398855}
+  colors: {fileID: 11400000, guid: 023bd8dad498917409cbc046db7f5c74, type: 2}
 --- !u!114 &2063048114
 MonoBehaviour:
   m_ObjectHideFlags: 0
