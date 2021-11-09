@@ -6,8 +6,8 @@ public class SnakeCollisions : MonoBehaviour
 {
     public delegate void SnakeCollisionsEventHandler();
     public static event SnakeCollisionsEventHandler OnObstacleCollide;
-
-    private void OnCollisionEnter(Collision other)
+    
+    private void OnTriggerEnter(Collider other)
     {
         var iCollisions = other.gameObject.GetComponent<ILevelObjectCollisions>();
         if(!iCollisions.Equals(null)) iCollisions.MakeCollision(gameObject);
