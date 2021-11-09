@@ -57,7 +57,7 @@ public class SnakeMover : MonoBehaviour
     {
         objectTransform.position = Vector3.Lerp(objectTransform.position, moveTarget, moveSpeed * Time.deltaTime);
         _progress = Mathf.Lerp(_progress, 1f, moveSpeed * Time.deltaTime);
-        if (_progress > 0.9f)
+        if (_progress > 1f)
         {
             _isMoving = false;
         }
